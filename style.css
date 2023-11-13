@@ -16,7 +16,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: rgb(219, 219, 219);
-    height: 500px;
+    height: 100vh;
 }
 
 #page_right {
@@ -79,7 +79,6 @@ label:hover {
     position: relative;
     display: flex;
     justify-content: center;
-    width: fit-content;
     margin-top: 200px;
     color: white;
     gap: 20px;
