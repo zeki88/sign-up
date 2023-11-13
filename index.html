@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-up Page</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="page">
+    <div id="page_left">
+      <div class="logo">
+        <img class="odin" src="img/odin-lined.png">
+        <h1>ODIN<sup>™</sup></h1>
+      </div>
+    </div>   
+    <div id="page_right">
+      <p><strong>This is not a real online service!</strong></p>
+      <p><strong>Sign up now to get started!</strong> </p> 
+      <form id="form" action="" method="">
+        <div>
+          <p><label for="first_name">FIRST NAME</label></p>
+          <input id="first_name" class="first_name input" name="first_name" type="text" pattern="[a-zA-Z]{2,16}">
+          <p class="error" id="error_first">*Name must contain only letters</p>
+        </div>
+        <div>
+          <p><label for="last_name">LAST NAME</label></p>
+          <input id="last_name" class="last_name input" name="last_name" type="text" pattern="[a-zA-Z]{2,16}">
+          <p class="error" id="error_last">*Name must contain only letters</p>
+        </div>
+        <div>
+          <p><label for="email">EMAIL</label></p>
+          <input id="email" class="email input" name="email" type="email">
+          <p class="error" id="error_email">*Please enter a valid e-mail</p>
+        </div>
+        <div>
+          <p><label for="phone_number">PHONE NUMBER</label></p>
+          <input id="phone_number" class="phone_number input" name="phone_number" type="tel">
+          <p class="error" id="error_phone">*Please enter a valid number</p>
+        </div>
+        <div>
+          <p><label for="password">PASSWORD</label></p>
+          <input id="password" class="password input" name="password" type="password">
+          <p class="error" id="error_password">*Password must be at least 8 characters</p>
+        </div>
+        <div>
+          <p><label for="password_confirm">CONFIRM PASSWORD</label></p>
+          <input id="password_confirm" class="password_confirm input" name="password_confirm" type="password">
+          <p class="error" id="error_password_confirm">*Passwords do not match</p>
+        </div>
+        <div class="fill" id="fill" name="fill">Please fill out all the required fields</div>
+        <input class="submit" type="submit">
+      </form>
+    </div>
+  </div>
+</body>
+</html>
